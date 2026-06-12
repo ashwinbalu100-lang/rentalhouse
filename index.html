@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+<title>Rental House System</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark"
+     style="background-color:#0F172A;">
+
+
+<div class="container">
+
+    <a class="navbar-brand d-flex align-items-center" href="/">
+
+        <span style="
+        font-size:32px;
+        margin-right:10px;">
+        
+        </span>
+
+        <span style="
+        font-weight:bold;
+        font-size:24px;
+        text-align:center;">
+        Rental House System
+        </span>
+
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+
+</div>
+
+
+</nav>
+
+<!-- Hero Section -->
+
+<section
+style="
+background:
+linear-gradient(
+rgba(0,0,0,0.55),
+rgba(0,0,0,0.55)
+),
+url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c');
+background-size:cover;
+background-position:center;
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+">
+
+
+<div>
+
+    <h1 class="display-3 fw-bold">
+
+        Find Your Dream Home
+
+    </h1>
+
+    <p class="lead mt-3">
+
+        Discover verified rental houses at affordable prices.
+
+    </p>
+
+    <a href="/houses"
+       class="btn btn-light btn-lg mt-3">
+
+        Explore Houses
+
+    </a>
+
+</div>
+
+
+</section>
+
+<!-- Search Bar -->
+
+<div class="container">
+
+
+<div class="row justify-content-center">
+
+    <div class="col-lg-10">
+
+        <div class="card shadow-lg border-0"
+             style="
+             margin-top:-50px;
+             border-radius:15px;
+             position:relative;
+             z-index:1000;">
+
+            <div class="card-body p-4">
+
+                <form method="GET" action="/houses">
+
+                    <div class="row g-2">
+
+                        <div class="col-md-9">
+
+                            <input
+                            type="text"
+                            name="search"
+                            class="form-control form-control-lg"
+                            placeholder="Search by Location">
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <button
+                            class="btn btn-warning btn-lg w-100">
+
+                                Search
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+<!-- Statistics -->
+
+<div class="container mt-5">
+
+
+<div class="row text-center">
+
+    <div class="col-md-4 mb-3">
+
+        <div class="card shadow border-0">
+
+            <div class="card-body">
+
+                <h1 class="text-primary">
+                    50+
+                </h1>
+
+                <h5>
+                    Houses Listed
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4 mb-3">
+
+        <div class="card shadow border-0">
+
+            <div class="card-body">
+
+                <h1 class="text-success">
+                    100+
+                </h1>
+
+                <h5>
+                    Happy Customers
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4 mb-3">
+
+        <div class="card shadow border-0">
+
+            <div class="card-body">
+
+                <h1 class="text-warning">
+                    24/7
+                </h1>
+
+                <h5>
+                    Customer Support
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+<!-- Property Types Section -->
+
+<div class="container py-5">
+
+    <h2 class="fw-bold mb-4">
+        Browse by Property Type
+    </h2>
+
+    <div class="row">
+
+        <!-- Houses -->
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card border-0 shadow-sm">
+
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                     class="card-img-top"
+                     style="height:250px; object-fit:cover;">
+
+                <div class="card-body">
+
+                    <h4 class="fw-bold">
+                        Houses
+                    </h4>
+
+                    <p class="text-muted">
+                        Comfortable family houses at affordable rent.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Villas -->
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card border-0 shadow-sm">
+
+                <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227"
+                     class="card-img-top"
+                     style="height:250px; object-fit:cover;">
+
+                <div class="card-body">
+
+                    <h4 class="fw-bold">
+                        Villas
+                    </h4>
+
+                    <p class="text-muted">
+                        Premium villas with luxury facilities.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Apartments -->
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card border-0 shadow-sm">
+
+                <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688"
+                     class="card-img-top"
+                     style="height:250px; object-fit:cover;">
+
+                <div class="card-body">
+
+                    <h4 class="fw-bold">
+                        Apartments
+                    </h4>
+
+                    <p class="text-muted">
+                        Modern apartments for students and professionals.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- Featured Houses -->
+
+<div class="container py-5">
+
+    <h2 class="fw-bold mb-4">
+        Featured Houses
+    </h2>
+
+    <div class="row">
+
+        {% for house in featured_houses %}
+
+        <div class="col-md-4 mb-4">
+
+            <div class="card shadow border-0 h-100">
+
+                <img src="{{ url_for('static', filename='upload/' + house[6]) }}"
+                     class="card-img-top"
+                     style="height:250px; object-fit:cover;">
+
+                <div class="card-body">
+
+                    <h4>
+                        {{ house[1] }}
+                    </h4>
+
+                    <p class="text-muted">
+                        📍 {{ house[2] }}
+                    </p>
+
+                    <h5 class="text-success">
+                        ₹{{ house[3] }}
+                    </h5>
+
+                    <p>
+                        {{ house[4] }}
+                    </p>
+
+                    <a href="/houses"
+                       class="btn btn-primary w-100">
+
+                        View Details
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+<!-- Features -->
+
+<div class="container py-5">
+    
+<h2 class="text-center mb-5">
+
+    Why Choose Us?
+
+</h2>
+
+<div class="row">
+
+    <div class="col-md-4">
+
+        <div class="card shadow overflow-hidden">
+
+            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa"
+                 class="card-img-top"
+                 style="height:220px; object-fit:cover;">
+
+            <div class="card-body text-center">
+
+                <h4>Verified Houses</h4>
+
+                <p>
+                    All houses are verified and maintained.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card shadow overflow-hidden">
+
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f"
+                 class="card-img-top"
+                 style="height:220px; object-fit:cover;">
+
+            <div class="card-body text-center">
+
+                <h4>Affordable Rent</h4>
+
+                <p>
+                    Best rental prices for families and students.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card shadow overflow-hidden">
+
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2"
+                 class="card-img-top"
+                 style="height:220px; object-fit:cover;">
+
+            <div class="card-body text-center">
+
+                <h4>Easy Booking</h4>
+
+                <p>
+                    Book houses easily through our platform.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+
+<!-- Footer -->
+
+<footer class="bg-dark text-white text-center mt-5 p-3">
+
+
+<p>
+
+    © 2026 Rental House System | Developed by Aswin
+
+</p>
+
+
+
+
+</footer>
+
+</body>
+
+</html>

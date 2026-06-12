@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Booking Requests</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+    <h1 class="mb-4">
+        Booking Requests
+    </h1>
+
+    <table class="table table-bordered">
+
+        <tr>
+            <th>ID</th>
+            <th>House Name</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Status</th>
+            <th>Accept</th>
+            <th>Reject</th>
+        </tr>
+
+        {% for booking in bookings %}
+
+        <tr>
+            <td>{{ booking[0] }}</td>
+            <td>{{ booking[1] }}</td>
+            <td>{{ booking[2] }}</td>
+            <td>{{ booking[3] }}</td>
+            <td>{{ booking[4] }}</td>
+            <td>{{ booking[5] }}</td>
+
+<td>
+    <a href="/accept-booking/{{ booking[0] }}"
+       class="btn btn-success">
+
+       Accept
+
+    </a>
+</td>
+
+<td>
+    <a href="/reject-booking/{{ booking[0] }}"
+       class="btn btn-danger">
+
+       Reject
+
+    </a>
+</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+</div>
+
+</body>
+</html>

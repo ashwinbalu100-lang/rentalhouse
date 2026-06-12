@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Add House</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+    <h1>Add House</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+
+        <input type="text"
+               name="house_name"
+               placeholder="House Name"
+               class="form-control mb-3"
+               required>
+
+        <input type="text"
+               name="location"
+               placeholder="Location"
+               class="form-control mb-3"
+               required>
+
+        <input type="number"
+               name="rent"
+               placeholder="Rent"
+               class="form-control mb-3"
+               required>
+
+        <textarea name="description"
+                  placeholder="Description"
+                  class="form-control mb-3"
+                  required></textarea>
+
+        <label class="form-label">
+            Property Type
+        </label>
+
+        <select name="property_type"
+                class="form-control mb-3"
+                required>
+
+            <option value="">Select Property Type</option>
+
+            <option value="House">House</option>
+
+            <option value="Villa">Villa</option>
+
+            <option value="Apartment">Apartment</option>
+
+        </select>
+
+        <label class="form-label">
+            House Image
+        </label>
+
+        <input type="file"
+               name="image"
+               class="form-control mb-3"
+               required>
+
+        <button type="submit"
+                class="btn btn-primary">
+
+            Add House
+
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
